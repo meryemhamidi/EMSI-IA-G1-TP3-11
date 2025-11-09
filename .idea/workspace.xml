@@ -10,10 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d6a38c0-4a4d-43f2-8765-88071de1f780" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/test-guide.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ma/emsi/hamidi/tp3hamidi/llm/GuideTouristique.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/emsi/hamidi/tp3hamidi/llm/GuideTouristique.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ma/emsi/hamidi/tp3hamidi/llm/GuideTouristiqueClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/emsi/hamidi/tp3hamidi/llm/GuideTouristiqueClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ma/emsi/hamidi/tp3hamidi/resources/GuideTouristiqueResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/emsi/hamidi/tp3hamidi/resources/GuideTouristiqueResource.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,9 +45,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="350Y1O16xslACfW5nq7uvHaOh3P" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -60,18 +60,19 @@
     "Payara Server.tp3hamidi.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1": "true",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
     "git-widget-placeholder": "master",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/IdeaProjects/tp3hamidi/src/main",
+    "last_opened_file_path": "D:/IdeaProjects/tp3hamidi",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "preferences.applicationServers",
     "to.speed.mode.migration.done": "true",
     "vue.rearranger.settings.migration": "true"
   }
@@ -152,9 +153,6 @@
       </ConfigurationWrapper>
       <method v="2">
         <option name="Make" enabled="true" />
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="tp3hamidi:war exploded" />
-        </option>
       </method>
     </configuration>
   </component>
@@ -173,7 +171,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1762248240692</updated>
-      <workItem from="1762248242049" duration="6685000" />
+      <workItem from="1762248242049" duration="11670000" />
+      <workItem from="1762420874319" duration="981000" />
+      <workItem from="1762453070469" duration="24000" />
+      <workItem from="1762689656906" duration="3284000" />
     </task>
     <servers />
   </component>

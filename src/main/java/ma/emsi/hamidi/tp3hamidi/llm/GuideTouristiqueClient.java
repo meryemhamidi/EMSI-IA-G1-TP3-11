@@ -3,32 +3,25 @@ package ma.emsi.hamidi.tp3hamidi.llm;
 import dev.langchain4j.model.chat.ChatModel;
 import dev.langchain4j.model.googleai.GoogleAiGeminiChatModel;
 import dev.langchain4j.service.AiServices;
-import jakarta.enterprise.context.ApplicationScoped;
 
+public class GuideTouristiqueClient {
 
-@ApplicationScoped
-public class GuideTouristiqueClient implements GuideTouristique {
-
-    private GuideTouristique guide;
+    private final GuideTouristique guideTouristique;
 
     public GuideTouristiqueClient() {
-        String apiKey = System.getenv("GEMINI_KEY");
-        if (apiKey == null || apiKey.isBlank()) {
-            throw new IllegalStateException("Clé API GEMINI_KEY manquante !");
-        }
-
         ChatModel model = GoogleAiGeminiChatModel.builder()
-                .apiKey(apiKey)
-                .modelName("gemini-2.5-flash")
-                .temperature(0.5)
+                .apiKey(System.getenv("GEMINI_KEY"))
+                .modelName("gemini-1.5-flash")
                 .build();
 
-        guide = AiServices.builder(GuideTouristique.class)
-                .chatModel(model)
-                .build();
+        this.guideTouristique = AiServices.create(GuideTouristique.class, model);
     }
 
-    public String ask(String lieu, int nombre) {
-        return guide.ask(lieu, nombre);
+    public String getInfosTouristiques(String lieu, int nb) {
+        String prompt = String.format(
+                "Donne-moi %d principaux endroits à visiter à %s, et le prix moyen d'un repas dans la devise locale.",
+                nb, lieu
+        );
+        return guideTouristique.infosLieu(prompt);
     }
 }
